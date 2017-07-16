@@ -24,8 +24,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainPlayActivity" />
-        <activity android:name=".OptionsActivity"></activity>
+        <activity android:name=".MainPlayActivity"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".OptionsActivity"
+            android:parentActivityName=".MainActivity"></activity>
     </application>
 
 </manifest>
